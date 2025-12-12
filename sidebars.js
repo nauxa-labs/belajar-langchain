@@ -82,7 +82,28 @@ const sidebars = {
         'structured-output/output-parsers-advanced',
       ],
     },
-    // Modul 5-10 akan ditambahkan saat kontennya dibuat
+    {
+      type: 'category',
+      label: '📚 Modul 5: RAG',
+      link: {
+        type: 'generated-index',
+        title: 'Retrieval Augmented Generation',
+        description: 'Menghubungkan LLM dengan knowledge base eksternal.',
+      },
+      items: [
+        'rag/konsep-rag',
+        'rag/document-loaders',
+        'rag/text-splitters',
+        'rag/embeddings',
+        'rag/vector-stores',
+        'rag/retrievers',
+        'rag/basic-rag-chain',
+        'rag/advanced-retrieval',
+        'rag/rag-evaluation',
+        'rag/rag-best-practices',
+      ],
+    },
+    // Modul 6-10 akan ditambahkan saat kontennya dibuat
   ],
 };
 
