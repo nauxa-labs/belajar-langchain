@@ -1,0 +1,8 @@
+{
+  "label": "📦 Structured Output",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Memaksa LLM menghasilkan data terstruktur dengan format yang konsisten."
+  }
+}

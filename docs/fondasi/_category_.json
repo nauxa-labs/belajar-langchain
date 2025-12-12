@@ -1,0 +1,8 @@
+{
+  "label": "🧱 Fondasi LangChain",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Memahami building blocks dasar LangChain: Chat Models, Prompts, dan Output Parsers."
+  }
+}
