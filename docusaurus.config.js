@@ -12,7 +12,7 @@ const config = {
 
   // Production URL
   url: 'https://nauxa-labs.github.io',
-  baseUrl: '/belajar-langchain/',
+  baseUrl: '/',
 
   // GitHub pages deployment config
   organizationName: 'nauxa-labs',

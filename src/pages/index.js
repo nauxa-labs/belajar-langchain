@@ -1,21 +1,30 @@
-import clsx from 'clsx';
+import React from 'react';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+function HeroBanner() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={styles.heroBanner}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 className={styles.heroTitle}>📚 Belajar LangChain</h1>
+        <p className={styles.heroSubtitle}>
+          Panduan lengkap belajar LangChain dari nol dalam Bahasa Indonesia
+        </p>
+        <p className={styles.heroDescription}>
+          Ingin membangun aplikasi AI seperti chatbot, asisten pintar, atau sistem RAG?
+          Kamu berada di tempat yang tepat!
+        </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
             to="/docs/prasyarat/pengantar-genai">
             🚀 Mulai Belajar
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://github.com/nauxa-labs/belajar-langchain">
+            ⭐ GitHub
           </Link>
         </div>
       </div>
@@ -23,95 +32,92 @@ function HomepageHeader() {
   );
 }
 
-function Feature({ emoji, title, description }) {
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      <div className="text--center">
-        <span style={{ fontSize: '4rem' }}>{emoji}</span>
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
-const FeatureList = [
+const curriculum = [
   {
-    emoji: '📚',
-    title: 'Komprehensif',
-    description: '10 modul dengan 60+ bab yang mencakup semua aspek LangChain, dari dasar hingga production.',
+    status: '✅',
+    title: 'Prasyarat & Setup',
+    description: 'Setup environment Python, API keys, pengantar AI',
+    link: '/docs/prasyarat/pengantar-genai',
   },
   {
-    emoji: '🇮🇩',
-    title: 'Bahasa Indonesia',
-    description: 'Dokumentasi lengkap dalam Bahasa Indonesia dengan istilah teknis yang jelas.',
+    status: '✅',
+    title: 'Fondasi LangChain',
+    description: 'Chat models, prompt templates, output parsers',
+    link: '/docs/fondasi/chat-models-vs-llms',
   },
   {
-    emoji: '💻',
-    title: 'Hands-On',
-    description: 'Setiap bab dilengkapi dengan code examples yang bisa langsung dijalankan.',
+    status: '✅',
+    title: 'LCEL',
+    description: 'Expression language untuk membangun chains',
+    link: '/docs/lcel/filosofi-lcel',
   },
   {
-    emoji: '🎯',
-    title: 'Use Case Praktis',
-    description: 'Setiap modul diakhiri dengan proyek praktis untuk mengaplikasikan pembelajaran.',
+    status: '✅',
+    title: 'Prompt Engineering',
+    description: 'Menulis prompt efektif, few-shot, debugging',
+    link: '/docs/prompt-engineering/prinsip-prompting',
   },
   {
-    emoji: '🔄',
-    title: 'Selalu Update',
-    description: 'Mengikuti perkembangan LangChain terbaru dengan best practices terkini.',
+    status: '✅',
+    title: 'Structured Output',
+    description: 'Pydantic, parsing JSON, typed responses',
+    link: '/docs/structured-output/mengapa-structured-output',
   },
   {
-    emoji: '🤖',
-    title: 'Production Ready',
-    description: 'Pelajari cara deploy, monitor, dan scale aplikasi LangChain di production.',
+    status: '⏳',
+    title: 'RAG',
+    description: 'Retrieval Augmented Generation',
+    link: null,
+  },
+  {
+    status: '⏳',
+    title: 'Tools & Function Calling',
+    description: 'Koneksi ke external APIs',
+    link: null,
+  },
+  {
+    status: '⏳',
+    title: 'Memory & State',
+    description: 'Chatbot dengan memori percakapan',
+    link: null,
+  },
+  {
+    status: '⏳',
+    title: 'Agents',
+    description: 'AI yang bisa mengambil keputusan',
+    link: null,
+  },
+  {
+    status: '⏳',
+    title: 'LangGraph',
+    description: 'Multi-agent workflows',
+    link: null,
+  },
+  {
+    status: '⏳',
+    title: 'Production',
+    description: 'Deployment & monitoring',
+    link: null,
   },
 ];
 
-function HomepageFeatures() {
+function CurriculumSection() {
   return (
-    <section className={styles.features}>
+    <section className={styles.curriculum}>
       <div className="container">
-        <h2 className="text--center margin-bottom--lg">Kenapa Belajar di Sini?</h2>
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ModuleOverview() {
-  const modules = [
-    { num: '0', title: 'Prasyarat & Setup', desc: 'Environment & API Keys' },
-    { num: '1', title: 'Fondasi', desc: 'Models, Prompts, Parsers' },
-    { num: '2', title: 'LCEL', desc: 'Expression Language' },
-    { num: '3', title: 'Prompt Engineering', desc: 'Few-shot, CoT, Hub' },
-    { num: '4', title: 'Structured Output', desc: 'Pydantic & Validation' },
-    { num: '5', title: 'RAG', desc: 'Retrieval Augmented Gen' },
-    { num: '6', title: 'Memory', desc: 'Conversation History' },
-    { num: '7', title: 'Agents', desc: 'Tool Calling & Actions' },
-    { num: '8', title: 'LangGraph', desc: 'State Machines' },
-    { num: '9', title: 'Production', desc: 'Deploy & Monitor' },
-    { num: '10', title: 'Proyek', desc: '4 Real-World Projects' },
-  ];
-
-  return (
-    <section className={styles.modules}>
-      <div className="container">
-        <h2 className="text--center margin-bottom--lg">📖 Struktur Kurikulum</h2>
-        <div className={styles.moduleGrid}>
-          {modules.map((m, idx) => (
-            <div key={idx} className={styles.moduleCard}>
-              <div className={styles.moduleNum}>{m.num}</div>
-              <div className={styles.moduleInfo}>
-                <strong>{m.title}</strong>
-                <small>{m.desc}</small>
-              </div>
+        <h2>✨ Apa yang Akan Kamu Pelajari?</h2>
+        <div className={styles.curriculumGrid}>
+          {curriculum.map((item, idx) => (
+            <div key={idx} className={`${styles.curriculumCard} ${item.status === '⏳' ? styles.comingSoon : ''}`}>
+              <span className={styles.status}>{item.status}</span>
+              <h3>
+                {item.link ? (
+                  <Link to={item.link}>{item.title}</Link>
+                ) : (
+                  item.title
+                )}
+              </h3>
+              <p>{item.description}</p>
             </div>
           ))}
         </div>
@@ -120,16 +126,91 @@ function ModuleOverview() {
   );
 }
 
+const audiences = [
+  { emoji: '👨‍💻', title: 'Developer', desc: 'yang ingin menambah skill AI/LLM' },
+  { emoji: '🎓', title: 'Mahasiswa', desc: 'yang mempelajari AI aplikatif' },
+  { emoji: '🚀', title: 'Startup Founder', desc: 'yang ingin membangun produk AI' },
+  { emoji: '🔄', title: 'Career Switcher', desc: 'ke bidang AI engineering' },
+];
+
+function AudienceSection() {
+  return (
+    <section className={styles.audience}>
+      <div className="container">
+        <h2>🎯 Untuk Siapa?</h2>
+        <div className={styles.audienceGrid}>
+          {audiences.map((item, idx) => (
+            <div key={idx} className={styles.audienceCard}>
+              <span className={styles.emoji}>{item.emoji}</span>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+        <p className={styles.prereq}>
+          <strong>Prasyarat:</strong> Familiar dengan Python dasar sudah cukup!
+        </p>
+      </div>
+    </section>
+  );
+}
+
+const whyLangchain = [
+  { icon: '⚡', title: 'Abstraksi Mudah', desc: 'Tidak perlu handle low-level API' },
+  { icon: '🔌', title: 'Multi-Provider', desc: 'OpenAI, Anthropic, Google dalam satu interface' },
+  { icon: '🧩', title: 'Composable', desc: 'Bangun sistem kompleks dari komponen sederhana' },
+  { icon: '📦', title: 'Batteries Included', desc: 'RAG, agents, memory siap pakai' },
+];
+
+function WhySection() {
+  return (
+    <section className={styles.why}>
+      <div className="container">
+        <h2>💡 Kenapa LangChain?</h2>
+        <div className={styles.whyGrid}>
+          {whyLangchain.map((item, idx) => (
+            <div key={idx} className={styles.whyCard}>
+              <span className={styles.icon}>{item.icon}</span>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <section className={styles.footerCta}>
+      <div className="container">
+        <h2>🏃 Siap Mulai?</h2>
+        <p>Mulai dari Modul 0 dan ikuti setiap bab secara berurutan.</p>
+        <Link
+          className="button button--primary button--lg"
+          to="/docs/prasyarat/pengantar-genai">
+          Mulai Belajar Sekarang →
+        </Link>
+        <p className={styles.footerNote}>
+          Disusun oleh <a href="https://github.com/nauxa-labs">Nauxa Labs</a> · Assisted with AI 🤖
+        </p>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - Panduan LangChain Bahasa Indonesia`}
-      description="Panduan komprehensif belajar LangChain dari nol dalam Bahasa Indonesia. Mencakup RAG, Agents, LangGraph, dan production deployment.">
-      <HomepageHeader />
+      title="Belajar LangChain"
+      description="Panduan lengkap belajar LangChain dari nol dalam Bahasa Indonesia">
+      <HeroBanner />
       <main>
-        <HomepageFeatures />
-        <ModuleOverview />
+        <CurriculumSection />
+        <AudienceSection />
+        <WhySection />
+        <Footer />
       </main>
     </Layout>
   );

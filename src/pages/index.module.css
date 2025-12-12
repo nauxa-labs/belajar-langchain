@@ -1,109 +1,248 @@
-/* Homepage styles */
-
+/* Hero Section */
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #10a37f 0%, #0d7a5f 100%);
+  background: linear-gradient(135deg, var(--ifm-color-primary-darker) 0%, var(--ifm-color-primary) 100%);
+  color: white;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  opacity: 0.95;
+  margin-bottom: 0.5rem;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto 2rem;
 }
 
 .buttons {
   display: flex;
-  align-items: center;
+  gap: 1rem;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-/* Features section */
-.features {
-  display: flex;
-  align-items: center;
+.buttons .button--secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.buttons .button--secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Curriculum Section */
+.curriculum {
   padding: 4rem 0;
-  width: 100%;
-  background-color: var(--ifm-color-emphasis-100);
+  background: var(--ifm-background-color);
 }
 
-[data-theme='dark'] .features {
-  background-color: var(--ifm-background-surface-color);
-}
-
-.feature {
+.curriculum h2 {
+  text-align: center;
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
-/* Modules section */
-.modules {
-  padding: 4rem 0;
-}
-
-.moduleGrid {
+.curriculumGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.moduleCard {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 8px;
-  background: var(--ifm-color-emphasis-100);
+.curriculumCard {
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border: 1px solid var(--ifm-color-emphasis-200);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.moduleCard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.curriculumCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-[data-theme='dark'] .moduleCard {
-  background: var(--ifm-color-emphasis-200);
+.curriculumCard.comingSoon {
+  opacity: 0.6;
+}
+
+.curriculumCard .status {
+  font-size: 1.5rem;
+}
+
+.curriculumCard h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.curriculumCard h3 a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.curriculumCard h3 a:hover {
+  text-decoration: underline;
+}
+
+.curriculumCard p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+}
+
+/* Audience Section */
+.audience {
+  padding: 4rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.audience h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.audienceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.audienceCard {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.audienceCard .emoji {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.audienceCard h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.audienceCard p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+}
+
+.prereq {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--ifm-color-primary-lightest);
+  border-radius: 8px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Why Section */
+.why {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.why h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.whyCard {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.whyCard .icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.whyCard h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: var(--ifm-color-primary);
+}
+
+.whyCard p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+}
+
+/* Footer CTA */
+.footerCta {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  color: white;
+}
+
+.footerCta h2 {
+  margin-bottom: 0.5rem;
+}
+
+.footerCta p {
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.footerNote {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.footerNote a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .curriculumCard {
   border-color: var(--ifm-color-emphasis-300);
 }
 
-[data-theme='dark'] .moduleCard:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+[data-theme='dark'] .whyCard {
+  border-color: var(--ifm-color-emphasis-300);
 }
 
-.moduleNum {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--ifm-color-primary);
-  color: white;
-  font-weight: 700;
-  margin-right: 1rem;
-  flex-shrink: 0;
+[data-theme='dark'] .audience {
+  background: var(--ifm-color-emphasis-100);
 }
 
-.moduleInfo {
-  display: flex;
-  flex-direction: column;
-}
-
-.moduleInfo strong {
-  font-size: 0.95rem;
-}
-
-.moduleInfo small {
-  color: var(--ifm-color-emphasis-600);
-  font-size: 0.8rem;
-}
-
-/* Responsive */
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-
-  .moduleGrid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
+[data-theme='dark'] .prereq {
+  background: rgba(0, 166, 126, 0.15);
 }
