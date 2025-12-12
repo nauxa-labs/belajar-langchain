@@ -233,7 +233,13 @@ rag_chain = prompt | llm.with_structured_output(RAGAnswer)
 ### 1. Graceful Fallbacks
 
 ```python
-from langchain_core.runnables import RunnableLambda
+from langchain_core.runnables import RunnableLambda, RunnablePassthrough
+from langchain_core.documents import Document
+from langchain_core.output_parsers import StrOutputParser
+import logging
+
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
 
 def safe_rag_chain(retriever, llm, prompt):
     """RAG chain with error handling."""

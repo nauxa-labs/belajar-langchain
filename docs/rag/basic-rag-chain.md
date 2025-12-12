@@ -343,6 +343,7 @@ if __name__ == "__main__":
 
 ```python
 from langchain_core.runnables import RunnableLambda
+from langchain_core.documents import Document
 
 def safe_retrieve(query: str):
     try:

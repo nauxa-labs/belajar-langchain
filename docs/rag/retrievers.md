@@ -316,7 +316,7 @@ Buat retriever sendiri untuk logic khusus.
 ```python
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.documents import Document
-from typing import List
+from typing import Any, List
 
 class CustomRetriever(BaseRetriever):
     vectorstore: Any

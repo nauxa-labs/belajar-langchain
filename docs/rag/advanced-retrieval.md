@@ -103,6 +103,7 @@ query_vector = hyde_embeddings.embed_query("What is the vacation policy?")
 
 ```python
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 
 hyde_prompt = ChatPromptTemplate.from_template("""
 Kamu adalah expert HR yang menulis kebijakan perusahaan.
