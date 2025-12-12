@@ -276,13 +276,14 @@ Update the summary with the new information."
 
 ## Best Practices Checklist
 
-✅ **Be specific** - Hindari ambiguitas
-✅ **Set constraints** - Length, format, scope
-✅ **Provide examples** - Untuk consistency
-✅ **Define persona** - Rol model yang diinginkan
-✅ **Structure clearly** - Use headers, bullets, numbering
-✅ **Test iteratively** - Refine berdasarkan output
-✅ **Document prompts** - Version control your prompts
+- ✅ **Be specific** - Hindari ambiguitas
+- ✅ **Set constraints** - Length, format, scope
+- ✅ **Provide examples** - Untuk consistency
+- ✅ **Define persona** - Rol model yang diinginkan
+- ✅ **Structure clearly** - Use headers, bullets, numbering
+- ✅ **Test iteratively** - Refine berdasarkan output
+- ✅ **Document prompts** - Version control your prompts
+
 
 ## Ringkasan
 
