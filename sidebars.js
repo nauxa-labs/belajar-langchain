@@ -156,9 +156,26 @@ const sidebars = {
         'langgraph/studio',
       ],
     },
-    // Modul 9-10 akan ditambahkan saat kontennya dibuat
+    {
+      type: 'category',
+      label: '🚀 Modul 9: Production',
+      link: {
+        type: 'generated-index',
+        title: 'Production & Observability',
+        description: 'Deploy dan monitor aplikasi LangChain di production.',
+      },
+      items: [
+        'production/langsmith-setup',
+        'production/tracing',
+        'production/evaluation',
+        'production/langserve',
+        'production/best-practices',
+      ],
+    },
+    // Modul 10 akan ditambahkan saat kontennya dibuat
   ],
 };
 
 export default sidebars;
+
 
