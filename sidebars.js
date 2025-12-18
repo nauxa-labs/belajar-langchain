@@ -137,8 +137,28 @@ const sidebars = {
         'agents/streaming-agents',
       ],
     },
-    // Modul 8-10 akan ditambahkan saat kontennya dibuat
+    {
+      type: 'category',
+      label: '📊 Modul 8: LangGraph',
+      link: {
+        type: 'generated-index',
+        title: 'LangGraph',
+        description: 'Membangun aplikasi AI kompleks dengan state management.',
+      },
+      items: [
+        'langgraph/intro',
+        'langgraph/core-concepts',
+        'langgraph/conditional-edges',
+        'langgraph/checkpointing',
+        'langgraph/human-in-loop',
+        'langgraph/multi-agent',
+        'langgraph/subgraphs',
+        'langgraph/studio',
+      ],
+    },
+    // Modul 9-10 akan ditambahkan saat kontennya dibuat
   ],
 };
 
 export default sidebars;
+
