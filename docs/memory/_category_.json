@@ -1,0 +1,8 @@
+{
+  "label": "Modul 6: Memory",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Membuat chatbot yang mengingat konteks percakapan"
+  }
+}

@@ -10,7 +10,7 @@ Ingin membangun aplikasi AI seperti chatbot, asisten pintar, atau sistem RAG? Ka
 
 ## ✨ Apa yang Akan Kamu Pelajari?
 
-### 🚀 Modul 0-4 (Tersedia)
+### 🚀 Modul 0-6 (Tersedia)
 
 | Modul | Apa yang Dipelajari |
 |-------|---------------------|
@@ -19,13 +19,12 @@ Ingin membangun aplikasi AI seperti chatbot, asisten pintar, atau sistem RAG? Ka
 | **LCEL** | Expression language untuk membangun chains |
 | **Prompt Engineering** | Menulis prompt efektif, few-shot, debugging |
 | **Structured Output** | Pydantic, parsing JSON, typed responses |
+| **RAG** | Retrieval Augmented Generation, vector stores, embeddings |
+| **Memory** | Chatbot dengan memori percakapan, conversational RAG |
 
 ### ⏳ Coming Soon
 
-- **RAG** - Retrieval Augmented Generation
-- **Tools & Function Calling** - Koneksi ke external APIs
-- **Memory** - Chatbot dengan memori percakapan
-- **Agents** - AI yang bisa mengambil keputusan
+- **Agents & Tools** - Function calling, tool use
 - **LangGraph** - Multi-agent workflows
 - **Production** - Deployment & monitoring
 
