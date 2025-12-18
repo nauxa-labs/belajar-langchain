@@ -10,23 +10,21 @@ Ingin membangun aplikasi AI seperti chatbot, asisten pintar, atau sistem RAG? Ka
 
 ## ✨ Apa yang Akan Kamu Pelajari?
 
-### 🚀 Modul 0-6 (Tersedia)
+### 🚀 Modul 0-10 (Tersedia)
 
 | Modul | Apa yang Dipelajari |
 |-------|---------------------|
-| **Prasyarat** | Setup environment Python, API keys, pengantar AI |
-| **Fondasi** | Chat models, prompt templates, output parsers |
-| **LCEL** | Expression language untuk membangun chains |
-| **Prompt Engineering** | Menulis prompt efektif, few-shot, debugging |
-| **Structured Output** | Pydantic, parsing JSON, typed responses |
-| **RAG** | Retrieval Augmented Generation, vector stores, embeddings |
-| **Memory** | Chatbot dengan memori percakapan, conversational RAG |
-
-### ⏳ Coming Soon
-
-- **Agents & Tools** - Function calling, tool use
-- **LangGraph** - Multi-agent workflows
-- **Production** - Deployment & monitoring
+| **[Prasyarat](/docs/prasyarat/intro)** | Setup environment Python, API keys, pengantar AI |
+| **[Fondasi](/docs/fondasi/intro)** | Chat models, prompt templates, output parsers |
+| **[LCEL](/docs/lcel/intro)** | Expression language untuk membangun chains |
+| **[Prompt Engineering](/docs/prompt-engineering/intro)** | Menulis prompt efektif, few-shot, debugging |
+| **[Structured Output](/docs/structured-output/intro)** | Pydantic, parsing JSON, typed responses |
+| **[RAG](/docs/rag/konsep-rag)** | Retrieval Augmented Generation, vector stores, embeddings |
+| **[Memory](/docs/memory/konsep-memory)** | Chatbot dengan memori percakapan, conversational RAG |
+| **[Agents](/docs/agents/konsep-agents)** | Function calling, tool use, ReAct pattern |
+| **[LangGraph](/docs/langgraph/intro)** | State management, multi-agent workflows |
+| **[Production](/docs/production/langsmith-setup)** | LangSmith, LangServe, deployment & monitoring |
+| **[Proyek Praktis](/docs/projects/overview)** | 4 proyek hands-on: RAG Chatbot, Research Agent, dll |
 
 ---
 
