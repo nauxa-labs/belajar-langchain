@@ -92,6 +92,23 @@ blockquote {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
+/* Navbar Star Button */
+.navbar-star-button {
+  background: linear-gradient(135deg, #f7b924 0%, #e6a817 100%) !important;
+  color: #333 !important;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.navbar-star-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(247, 185, 36, 0.4);
+  color: #333 !important;
+  text-decoration: none !important;
+}
+
 /* Footer styling */
 .footer {
   background-color: #1f2937;

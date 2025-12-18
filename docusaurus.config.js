@@ -68,6 +68,12 @@ const config = {
           },
           {
             href: 'https://github.com/nauxa-labs/belajar-langchain',
+            label: '⭐ Star',
+            position: 'right',
+            className: 'navbar-star-button',
+          },
+          {
+            href: 'https://github.com/nauxa-labs/belajar-langchain',
             label: 'GitHub',
             position: 'right',
           },
