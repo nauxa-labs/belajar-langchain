@@ -121,7 +121,6 @@ const sidebars = {
     },
     {
       type: 'category',
-<<<<<<< HEAD
       label: '🤖 Modul 7: Agents',
       link: {
         type: 'generated-index',
