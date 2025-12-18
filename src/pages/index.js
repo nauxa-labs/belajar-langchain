@@ -181,6 +181,28 @@ function WhySection() {
   );
 }
 
+function StarCta() {
+  return (
+    <section className={styles.starCta}>
+      <div className="container">
+        <h2>⭐ Bermanfaat? Beri Kami Bintang!</h2>
+        <p>
+          Jika dokumentasi ini membantu perjalanan belajar AI-mu, pertimbangkan untuk memberi ⭐ di GitHub.
+          Ini membantu kami menjangkau lebih banyak developer Indonesia!
+        </p>
+        <Link
+          className="button button--warning button--lg"
+          to="https://github.com/nauxa-labs/belajar-langchain">
+          ⭐ Star di GitHub
+        </Link>
+        <p className={styles.starNote}>
+          Gratis, cuma 1 klik, tapi berarti banyak buat kami! 💛
+        </p>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <section className={styles.footerCta}>
@@ -210,6 +232,7 @@ export default function Home() {
         <CurriculumSection />
         <AudienceSection />
         <WhySection />
+        <StarCta />
         <Footer />
       </main>
     </Layout>

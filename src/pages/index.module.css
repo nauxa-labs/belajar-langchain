@@ -202,6 +202,31 @@
   font-size: 0.9rem;
 }
 
+/* Star CTA Section */
+.starCta {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #f7b924 0%, #e6a817 100%);
+  color: #333;
+}
+
+.starCta h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.starCta p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+}
+
+.starNote {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
 /* Footer CTA */
 .footerCta {
   padding: 4rem 0;
