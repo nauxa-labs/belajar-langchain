@@ -303,13 +303,13 @@ Use a json blob to specify a tool by providing an action key (tool name) and an 
 
 Valid "action" values: "Final Answer" or {tool_names}
 
-Provide only ONE action per $JSON_BLOB, as shown:
+Provide only ONE action per JSON_BLOB, as shown:
 
-```
-{{
-  "action": $TOOL_NAME,
-  "action_input": $INPUT
-}}
+```json
+{
+  "action": "TOOL_NAME",
+  "action_input": "INPUT"
+}
 ```
 """),
     ("human", "{input}\n\n{agent_scratchpad}")
