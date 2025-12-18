@@ -121,6 +121,7 @@ const sidebars = {
     },
     {
       type: 'category',
+<<<<<<< HEAD
       label: '🤖 Modul 7: Agents',
       link: {
         type: 'generated-index',
@@ -172,10 +173,26 @@ const sidebars = {
         'production/best-practices',
       ],
     },
-    // Modul 10 akan ditambahkan saat kontennya dibuat
+    {
+      type: 'category',
+      label: '🎯 Modul 10: Proyek Praktis',
+      link: {
+        type: 'generated-index',
+        title: 'Proyek Praktis',
+        description: 'Mengaplikasikan semua yang dipelajari dalam proyek nyata.',
+      },
+      items: [
+        'projects/overview',
+        'projects/rag-chatbot',
+        'projects/research-agent',
+        'projects/customer-support',
+        'projects/content-pipeline',
+      ],
+    },
   ],
 };
 
 export default sidebars;
+
 
 
