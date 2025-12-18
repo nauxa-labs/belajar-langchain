@@ -293,29 +293,11 @@ For models without native function calling:
 ```python
 from langchain.agents import create_structured_chat_agent
 
-structured_prompt = ChatPromptTemplate.from_messages([
-    ("system", """Respond to the human as helpfully as possible.
-You have access to the following tools:
+# Note: Structured chat agents use specific prompt format
+# with JSON action specification. See LangChain docs for
+# the full prompt template.
 
-{tools}
-
-Use a json blob to specify a tool by providing an action key (tool name) and an action_input key (tool input).
-
-Valid "action" values: "Final Answer" or {tool_names}
-
-Provide only ONE action per JSON_BLOB, as shown:
-
-```json
-{
-  "action": "TOOL_NAME",
-  "action_input": "INPUT"
-}
-```
-"""),
-    ("human", "{input}\n\n{agent_scratchpad}")
-])
-
-agent = create_structured_chat_agent(llm, tools, structured_prompt)
+agent = create_structured_chat_agent(llm, tools, structured_chat_prompt)
 ```
 
 ## Complete Production Example
