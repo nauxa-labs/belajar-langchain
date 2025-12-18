@@ -103,7 +103,23 @@ const sidebars = {
         'rag/rag-best-practices',
       ],
     },
-    // Modul 6-10 akan ditambahkan saat kontennya dibuat
+    {
+      type: 'category',
+      label: '🧠 Modul 6: Memory',
+      link: {
+        type: 'generated-index',
+        title: 'Memory & Conversation',
+        description: 'Membuat chatbot yang mengingat konteks percakapan.',
+      },
+      items: [
+        'memory/konsep-memory',
+        'memory/message-history',
+        'memory/runnable-with-history',
+        'memory/memory-types',
+        'memory/conversational-rag',
+      ],
+    },
+    // Modul 7-10 akan ditambahkan saat kontennya dibuat
   ],
 };
 
