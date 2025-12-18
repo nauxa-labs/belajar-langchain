@@ -119,7 +119,25 @@ const sidebars = {
         'memory/conversational-rag',
       ],
     },
-    // Modul 7-10 akan ditambahkan saat kontennya dibuat
+    {
+      type: 'category',
+      label: '🤖 Modul 7: Agents',
+      link: {
+        type: 'generated-index',
+        title: 'Agents & Tool Calling',
+        description: 'Membiarkan LLM mengambil aksi dan menggunakan tools.',
+      },
+      items: [
+        'agents/konsep-agents',
+        'agents/tool-calling',
+        'agents/built-in-tools',
+        'agents/custom-tools',
+        'agents/agent-executors',
+        'agents/agent-patterns',
+        'agents/streaming-agents',
+      ],
+    },
+    // Modul 8-10 akan ditambahkan saat kontennya dibuat
   ],
 };
 
